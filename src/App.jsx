@@ -259,31 +259,31 @@ ${jobDescription ? `TARGET JOB DESCRIPTION:\n${jobDescription}` : ""}
 RESPOND ONLY IN THIS EXACT JSON FORMAT — no preamble, no markdown, no explanation outside the JSON:
 
 {
-  "ats_score": 78,
+  "ats_score": <integer 0-100>,
   "score_breakdown": {
-    "keywords": { "score": 18, "max": 25 },
-    "work_experience": { "score": 20, "max": 25 },
-    "formatting": { "score": 15, "max": 20 },
-    "skills": { "score": 17, "max": 20 },
-    "education": { "score": 8, "max": 10 }
+    "keywords": { "score": <0-25>, "max": 25 },
+    "work_experience": { "score": <0-25>, "max": 25 },
+    "formatting": { "score": <0-20>, "max": 20 },
+    "skills": { "score": <0-20>, "max": 20 },
+    "education": { "score": <0-10>, "max": 10 }
   },
-  "verdict": "Good",
-  "overall_summary": "A brief summary of the evaluation.",
+  "verdict": "<Excellent | Good | Needs Work | Poor>",
+  "overall_summary": "<2-3 sentence honest summary of the resume's ATS readiness>",
   "strengths": [
-    "strength 1",
-    "strength 2",
-    "strength 3"
+    "<specific strength 1>",
+    "<specific strength 2>",
+    "<specific strength 3>"
   ],
   "critical_improvements": [
-    "actionable fix 1",
-    "actionable fix 2",
-    "actionable fix 3",
-    "actionable fix 4",
-    "actionable fix 5"
+    "<specific, actionable fix 1>",
+    "<specific, actionable fix 2>",
+    "<specific, actionable fix 3>",
+    "<specific, actionable fix 4>",
+    "<specific, actionable fix 5>"
   ],
-  "missing_keywords": ["keyword1", "keyword2", "keyword3"],
-  "red_flags": ["anything that breaks parsing or recruiter concern"],
-  "quick_wins": ["changes that take under 10 minutes to improve score"]
+  "missing_keywords": ["<keyword1>", "<keyword2>", "<keyword3>"],
+  "red_flags": ["<anything that would cause immediate ATS rejection or recruiter concern>"],
+  "quick_wins": ["<changes that take under 10 minutes and would immediately improve the score>"]
 }
 `;
 
